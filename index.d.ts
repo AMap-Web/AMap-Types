@@ -996,9 +996,9 @@ declare global {
     }
 
     /**
-     * 
+     *
      * 鹰眼的初始化参数
-     * 
+     *
      * @public
      */
     export interface HawkEyeOptions {
@@ -1021,7 +1021,7 @@ declare global {
     /**
      * 鹰眼控件，用于显示缩略地图，显示于地图右下角，可以随主图的视口变化而变化，也可以配置成固定位置实现类似于南海附图的效果
      * https://lbs.amap.com/api/javascript-api-v2/documentation#hawkeye
-     * 
+     *
      * @public
      * @param {HawkEyeOptions} options
      * @class HawkEye
@@ -4460,7 +4460,7 @@ declare global {
        * @instance
        * @memberof Map
        */
-      add(features: Overlay | Layer | Array<Overlay | Layer>): void;
+      add(features: Overlay | Layer | Array<Overlay | Layer> | OverlayGroup): void;
       /**
        * 删除覆盖物/图层。参数为单个覆盖物/图层，或覆盖物/图层的数组。
        *
@@ -4470,7 +4470,7 @@ declare global {
        * @instance
        * @memberof Map
        */
-      remove(features: Overlay | Layer | Array<Overlay | Layer>): void;
+      remove(features: Overlay | Layer | Array<Overlay | Layer> | OverlayGroup): void;
       /**
        * 经纬度转莫卡托坐标（单位：米）
        * @name lngLatToCoords
